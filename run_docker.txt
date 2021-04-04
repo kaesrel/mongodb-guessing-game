@@ -1,0 +1,11 @@
+
+docker-compose up -d
+
+docker-compose down -v && docker-compose up -d
+
+
+
+docker-compose ps
+
+
+docker exec -it mongodb mongo "localhost/pantip" --quiet -u root -p password --authenticationDatabase admin
